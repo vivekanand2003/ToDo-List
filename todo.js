@@ -26,15 +26,3 @@ ul.addEventListener("click",function(event){
         delist.remove();
     }
 })
-
-// delete button eventlistner to remove list
-
-// let delbutns=document.querySelectorAll(".Delete")
-// for(btn of delbutns)
-// {
-//     btn.addEventListener("click",function(){
-//         let par=this.parentElement;
-//        console.log(par);
-//        par.remove();
-//     })
-// }
