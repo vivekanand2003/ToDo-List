@@ -4,21 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
+    <style>
+        h1{
+            margin-left: 30px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+        }
+        .add{
+            padding: 10px;
+            color: white;
+            background-color: green;
+            border-radius: 10px;
+            font-size: 15px;   
+            margin-left: 10px;
+        }
+
+        .delete{
+            color: white;
+            background-color: red;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            font-size: 15px; 
+            margin-left: 10px;    
+            border: double; 
+        }
+        button{
+            width: 100px;
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>ToDo List</h1>
-    <form src="/action">
-        <input placeholder="Enter Task">
-        <button type="submit">add</button>
-    </form>
-    <ul id="uls">
-        <li>Eat
-            <button class="Delete">Delete</button>
-        </li>
-        <li>sleep
-            <button class="Delete">Delete</button>
-        </li>
-    </ul>
+<div class="main">
+    <div>
+        <h1>ToDo List</h1>
+        <form src="/action">
+            <input placeholder="Enter Task">
+            <button class="add" type="submit">add</button>
+        </form>
+        <ul id="uls">
+            <li>Eat
+                <button class="delete">Delete</button>
+            </li>
+            <li>sleep
+                <button class="delete">Delete</button>
+            </li>
+        </ul>
+    </div>
+</div>
     <script src="todo.js"></script>
 </body>
 </html>
