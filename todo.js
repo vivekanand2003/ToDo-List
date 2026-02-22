@@ -12,6 +12,14 @@ forn.addEventListener("submit",function(event){
     let Delbtn=document.createElement("button");
     Delbtn.classList.add("Delete");
     Delbtn.innerText="Delete";
+    Delbtn.style.backgroundColor = "red";
+    Delbtn.style.color = "white";
+    Delbtn.style.padding = " 10px";
+    Delbtn.style.marginLeft ="10px";
+    Delbtn.style.marginTop ="10px";
+    Delbtn.style.borderRadius = "10px";
+    Delbtn.style.border = "double";
+    Delbtn.style.fontSize= "15px";
     lis.appendChild(Delbtn);
     // document.querySelector("ul").append(lis);
     ul.appendChild(lis);
